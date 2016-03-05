@@ -1,0 +1,44 @@
+<!-- 日志分页显示 -->
+<div class="journal-collection">
+	{foreach $jourPaging['data'] as $data}
+	<div class="journal-collection">
+		<div class="every-journal">
+			<div class="jour-information">
+				<div class="jour-id" style="display: none">{$data['id']}</div>
+				<div class="time">{substr($data['jour_time'],6,5)}</div>
+				<div class="jour-title">{$data['jour_title']}</div>
+			</div>
+			<div class="jour-content">{substr($data['jour_content'], 0, 530)}</div>
+			<div class="jour-act">
+				<div class="jour-tag">{$data['jour_tag']}</div>
+				
+					<form action="index.php?method=addlove&pagenum={$jourPaging['pageNum']}" method="post">
+						<input type="hidden" name="jour_id" value="{$data['id']}">					
+						<input type="hidden" name="jour_love" value="{$data['jour_love']+1}">					
+						
+						<button type="submit" name="submit"><div class="love-jour" >赞{$data['jour_love']}</div></button>
+					</form>
+
+				
+				<div class="all-jour">
+					<a href="index/single.php?jourid={$data['id']}&pagenum={$jourPaging['pageNum']}" >查看全文</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	{/foreach}
+{if $jourPaging['type'] eq -1}
+	<a href="index.php?pagenum={$jourPaging['pageNum']+1}">下一页</a>
+	<a href="index.php?pagenum={$jourPaging['totalNum']}">尾页</a>
+	{elseif $jourPaging['type'] eq 0}
+	<a href="index.php?pagenum=1">首页</a>
+	<a href="index.php?pagenum={$jourPaging['pageNum']-1}">上一页</a>
+	<a href="index.php?pagenum={$jourPaging['pageNum']+1}">下一页</a>
+	<a href="index.php?pagenum={$jourPaging['totalNum']}">尾页</a>
+	{elseif $jourPaging['type'] eq 1}
+	<a href="index.php?pagenum=1">首页</a>
+	<a href="index.php?pagenum={$jourPaging['pageNum']-1}">上一页</a>
+	{else}
+{/if}
+当前页{$jourPaging['pageNum']}  总共{$jourPaging['totalNum']}
+</div>

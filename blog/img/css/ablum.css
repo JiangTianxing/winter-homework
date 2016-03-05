@@ -1,0 +1,158 @@
+img {
+	z-index: -100;
+}
+.pic-core {
+	width: 1200px;
+	height: auto;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+}
+.picture {
+	width: 1200px;
+	height: auto;
+	position: relative;
+	display: block;
+	margin-top: -13px;
+}
+.pic-first {
+	width: 1200px;
+	height: 50px;
+	position: relative;
+	background: #ffff99;
+	border-radius: 5px;
+}
+.myname {
+	width: 80px;
+	position: relative;
+	line-height: 50px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 30px;
+	margin-left: 20px;
+	float: left;
+}
+.upload {
+	width: 100px;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 25px;
+	position: relative;
+	margin-right: 100px;
+	margin-top: 5px;
+	float: right;
+	background: #ff9999;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px #888888;
+}
+.up-pic {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	width: 400px;
+	height: 300px;
+	float: left;
+	display: none;
+	z-index: 10;
+}
+.close-up {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	margin-left: 385px;
+	margin-top: -15px;
+	float: right;
+	z-index: 200;
+	border-radius: 15px;
+	background: white;
+	color: black;
+	font-family: Microsoft YaHei;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 25px;
+}
+.upp {
+	width: 80px;
+	height: 30px;
+	font-size: 20px;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
+	margin-top: 20px;
+	margin-left: 150px;
+	background-color: #f0f0f0;
+	background-image: -webkit-gradient(linear,left top, left bottom,from(#fefefe), color-stop(0.5,#f0f0f0), color-stop(0.51, #e6e6e6));
+	background-image: -moz-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+	background-image: -o-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+	background-image: -ms-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+	background-image: linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+	box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+	-moz-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+	-webkit-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+	border-right: 1px solid rgba(9, 9, 9, 0.125);
+}
+.up-title {
+	margin-top: 20px;
+	width: 396px;
+	height: 200px;
+	position: relative;
+}
+.submitpic {
+	margin-left: 150px;
+	margin-top: 20px;
+	position: relative;
+	float: left;
+}
+.abl {
+	width: 260px;
+	overflow: hidden;
+	height: auto;
+	position: relative;
+	float: left;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+.close-pic {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	float: right;
+	margin-left: 185px;
+	margin-top: -15px;
+	border-radius: 15px;
+	background: white;
+	color: black;
+	font-family: Microsoft YaHei;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 25px;
+	display: none;
+}
+.title-pic {
+	width: 200px;
+	height: 50px;
+	position: relative;
+	margin-top: -50px;
+	color: green;
+}
+#big {
+	width: 1000px;
+	height: 1000px;
+	position: fixed;
+	top: 200px;
+	left: 200px;
+	display: none;
+	float: left;
+}
+#close {
+	width: 30px;
+	height: 30px;
+	background: black;
+	position: relative;
+	float: left;
+	border-radius: 50%;
+}

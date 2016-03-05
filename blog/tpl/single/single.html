@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>单页</title>
+	<link rel="stylesheet" type="text/css" href="../img/css/single.css">
+</head>
+<body>
+	<ul id='navigation' name='bang'>
+	{if isset($singleData['pagenum'])}
+		<a href="../index.php?pagenum={$singleData['pagenum']}">
+	{/if}
+	{if isset($singleData['method'])}
+		<a href="../index/jour.php">
+	{/if}
+	返回</a>
+		<li class='mylogo'>
+			<img src='../img/image/ZXY.png'></li>
+		<li class='name'></li>
+	</ul>
+
+		<div class='banner'></div>
+	<div class='jour'>
+		<h1 class='journal-title'>{$singleData['jour_title']}</h1>
+		<div class='imf'>
+			<div class='lovenumber'>{$singleData['jour_love']}赞|</div>
+			<div class='time'>发布于:{$singleData['jour_time']}</div>
+		</div>
+		<hr>
+		<div class='alljour'>{$singleData['jour_content']}</div>
+		<div class='alltag'>
+			标签
+			<br/>
+			<div class='tag'>{$singleData['jour_tag']}</div>
+		</div>
+	</div>
+<script type="text/javascript">
+var bt = document.querySelector('.bt');
+bt.addEventListener('click',function(){
+	location.href = "#navigation";
+});
+var back = document.querySelector('.home');
+back.addEventListener('click',function(){
+	history.back(-1);
+});
+
+</script>
+</body>
+</html>
+

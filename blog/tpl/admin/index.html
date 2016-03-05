@@ -1,0 +1,41 @@
+<!-- 全体 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>home</title>
+	<link rel="stylesheet" type="text/css" href="img/css/home.css">
+	<link rel="stylesheet" type="text/css" href="img/css/navigation.css">
+</head>
+<body>
+
+<!-- 头部 -->
+	{include file='admin/header.html'}
+	<div class="core">
+		<!-- 日志 admin-->
+			{include file='admin/journal.html'}
+	</div>
+
+
+	
+<script type="text/javascript" src="img/js/anavigation1.js"></script>
+<script type="text/javascript">
+	love.click(function(){
+	var love = document.querySelector('.love-jour');
+    var lovenumber = love.innerHTML;
+    var id = document.querySelector('.jour-title').innerHTML;
+	love.fadeOut(300);
+	$.ajax({
+		type:"POST",
+		url:"../lib/journal.php",
+		data:"id="+id,
+		cache:false,
+		success:function(data){
+			love.html(data);
+			love.fadeIn(300);
+		}
+	});
+});
+</script>	
+</body>
+</html>
