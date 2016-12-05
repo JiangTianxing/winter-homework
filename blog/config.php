@@ -7,7 +7,7 @@
 //数据库
 	$dbhost = '127.0.0.1';
 	$dbuser = 'root';
-	$dbpsw = 'jxx970224';
+	$dbpsw = '';
 	$dbname = 'homework';
 	$dbcharset = 'utf8';
 
