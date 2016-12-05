@@ -1,0 +1,215 @@
+.core {
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+.journal-collection {
+	width: 800px;
+	height: auto;
+	position: relative;
+}
+.every-journal {
+	width: 800px;
+	height: 400px;
+	position: relative;
+	background: url('../image/c.jpg') no-repeat;
+	background-size: 800px 400px; 
+	margin-top: 20px;
+}
+.time {
+	position: relative;
+	margin-top: 10px;
+	margin-left: 20px;
+	width: 40px;
+	height: 40px;
+	float: left;
+	border-radius: 20px;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	-webkit-animation-name: naiPulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+.jour-title {
+	margin-left: 30px;
+	margin-top: 10px;
+	width: 650px;
+	height: 40px;
+	float: left;
+	font-size: 20px;
+	line-height: 40px;
+    vertical-align: middle;
+    box-shadow: 10px 10px 5px #888888;
+	color: black;
+}
+.jour-content {
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 760px;
+	height: 250px;
+	line-height: 40px;
+	vertical-align: middle;
+	font-size: 30px;
+	position: relative;
+	box-shadow: 10px 10px 5px #888888;
+	float: left;
+}
+.jour-act {
+	margin-top: 50px;
+	margin-left: 30px;
+	width: 760px;
+	height: 40px;
+	position: relative;
+	float: left;
+}
+.jour-tag {
+	/*width: 40px;*/
+	height: 20px;
+	font-size: 15px;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
+	float: left;
+	-webkit-animation-name: naiPulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+.love-jour {
+	width: 30px;
+	height: 20px;
+	font-size: 15px;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+	
+	-webkit-animation-name: naiPulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+button{
+	width: 30px;
+	height: 20px;
+	float: left;
+	margin-left: 60px;
+	padding: 0;
+	position: relative;
+}
+a{
+	text-decoration: none;
+}
+.all-jour {
+	width: 120px;
+	height: 20px;
+	margin-right: 0px;
+	float: right;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	line-height: 20px;
+	vertical-align: middle;
+	-webkit-animation-name: naiPulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+.tags {
+	width: 350px;
+	height: 150px;
+	top: 0px;
+	right: 10px;
+	float: right;
+	position: absolute;
+	padding-top: 38px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #F0F0F0;
+    
+        /* gradients - second red border, first red border, top white space, blue lines */
+    background-image:  -webkit-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -webkit-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -webkit-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -webkit-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-image:  -moz-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -moz-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -moz-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -moz-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-image:  -ms-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -ms-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -ms-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -ms-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-image:  -o-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -o-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -o-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -o-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-image:  linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-size: 1px, 1px, auto, auto 20px;
+    background-repeat: repeat-y, repeat-y, no-repeat, repeat;
+    background-position: 90% 0px, 10% 0px, 0px 0px, 0px 0px;
+    
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.paper:first-line {
+    line-height: 33px;
+    vertical-align: baseline;
+	border-image:url('../image.s.png') 30 30 round;
+	-webkit-border-image:url(../image/s.png) 30 30 round;	
+}
+.tag {
+	width: 80px;
+	height: 40px;
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 30px;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	float: left;
+	position: relative;
+}
+.recommend {
+	width: 350px;
+	height: 300px;
+	top: 200px;
+	right: 10px;
+	float: right;
+	position: absolute;
+	padding-top: 38px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #F0F0F0;
+    
+        /* gradients - second red border, first red border, top white space, blue lines */
+    background-image:  -webkit-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -webkit-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -webkit-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -webkit-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-image:  -moz-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -moz-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -moz-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -moz-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-image:  -ms-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -ms-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -ms-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -ms-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-image:  -o-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -o-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -o-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -o-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-image:  linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-size: 1px, 1px, auto, auto 20px;
+    background-repeat: repeat-y, repeat-y, no-repeat, repeat;
+    background-position: 90% 0px, 10% 0px, 0px 0px, 0px 0px;
+    
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.paper:first-line {
+    line-height: 33px;
+    vertical-align: baseline;
+}
+.rec-title {
+	width: 350px;
+	height: 40px;
+	margin-top: 10px;
+	font-size: 30px;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	float: left;
+	position: relative;
+}
+.massage {
+	position: absolute;
+	top: 600px;
+	width: 350px;
+	right: 10px;
+	height: 200px;
+	border: 2px solid;
+}
+@-webkit-keyframes naiPulse {
+  from { background-color: #ccffff; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #ccffcc; -webkit-box-shadow: 0 0 18px #91bd09; }
+  to { background-color: #ccffff; -webkit-box-shadow: 0 0 9px #333; }
+}

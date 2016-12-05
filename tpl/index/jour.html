@@ -1,0 +1,89 @@
+<!-- 时光轴 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jour</title>
+	<link rel="stylesheet" type="text/css" href="../img/css/navigation.css">
+	<style type="text/css">
+        .jour {
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+}
+    ul.timeline {
+	list-style-type: none;
+	background: url("../img/image/line.png") repeat-y scroll 80px 0 transparent;
+	margin: 50px 0;
+	padding: 0;
+}
+ul.timeline li {
+	position: relative;
+	margin-bottom: 20px;
+}
+ul.timeline li .time-number {
+	position: absolute;
+	background: url("../img/image/dot.png") no-repeat scroll 0 0 transparent;
+	width: 56px;
+	height: 56px;
+	left: 57px;
+	line-height: 56px;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 28px;
+}
+ul.timeline li .scontent {
+	margin-left: 180px;
+	position: relative;
+	margin-top: 50px;
+}
+ul.timeline li .scontent pre {
+	background-color: #99ccff;
+	text-align: left;
+	padding: 20px;
+	color: #fff;
+	font-size: 13px;
+	line-height: 20px;
+}
+	</style>
+</head>
+<body>
+
+
+
+	{include file='index/header.html'}
+	<div class="jour">
+		<ul class="timeline">
+			<li>
+				{foreach $jourInfor as $key=>$value}
+				<li>
+					<div class="time-number">{$key}</div>
+					<div class="scontent">
+						<pre>
+{foreach $value as $row}<span style="float: left;">{substr($row['jour_time'],5,5)}</span>        <a href="single.php?jourid={$row['id']}&last=jour">{$row['jour_title']}   {$row['jour_tag']}</a>
+{/foreach}
+						</pre>
+					</div>
+				</li>
+				{/foreach}
+			</li>
+		</ul>
+	</div>
+
+
+
+
+		<script type="text/javascript" src="../img/js/navigation2.js"></script>
+		<script type="text/javascript">
+	$(function(){
+	var liNodes = $('ul.timeline li'), cout = liNodes.length,i,liNode;
+	for (i = 0; i < cout; i++) {
+		liNode = $(liNodes.get(i));
+		liNode.find('.time-number').text(count-i);
+	};
+});
+</script></body>
+	</html>

@@ -1,0 +1,168 @@
+#write-core {
+	width: 1200px;
+	height: 600px;
+	position: relative;
+	margin: 0 auto;
+	margin-top: -13px;
+	display: block;
+	background: url('../image/m.jpg') no-repeat;
+}
+.first-step {
+	width: 800px;
+	height: 100px;
+	position: relative;
+	margin-top: 40px;
+}
+.title {
+	width: 500px;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	position: relative;
+	float: left;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+.wt {
+	width: 60px;position: relative;
+	float: left;
+}
+.wag {
+	width: 60px;position: relative;
+	float: left;
+}
+.title-input {
+	width: 400px;
+	height: 30px;
+	margin-top: 10px;
+	position: relative;
+	float: left;
+}
+.write-tag {
+	width: 200px;
+	height: 50px;
+	position: relative;
+	line-height: 50px;
+	vertical-align: middle;
+	float: left;
+	margin-left: 50px;
+	margin-top: 25px;
+}
+.tag-input {
+	width: 80px;
+	height: 30px;
+	margin-top: 10px;
+	position: relative;
+}
+#article {
+	margin-top: 30px;
+	position: relative;
+	margin-left: 250px;
+	float: left;
+}
+.up {
+	margin-left: 300px;
+	margin-top: 20px;
+	position: relative;
+	-webkit-animation-name: naiPulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+#music {
+	width: 400px;
+	height: 600px;
+	margin-right: 30px;
+	position: absolute;
+	float: right;
+	top: 10px;
+	right: 10px;
+}
+#mcimg {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	margin-top: 50px;
+	margin-left: 50px;
+	float: left;
+	overflow: hidden;
+	z-index: 0;
+	background: url('../image/a.jpg');
+}
+#play {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	display: block;
+}
+#pause {
+	margin-left: 75px;
+	margin-top: 75px;
+	position: relative;
+	float: left;
+	width: 150px;
+	height: 150px;
+	opacity: 0.5;
+	text-align: center;
+	z-index: 20;
+	display: none;
+}
+.mcname {
+	width: 300px;
+	height: 50px;
+	vertical-align: middle;
+	line-height: 50px;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 30px;
+	position: relative;
+	margin-left: 50px;
+	float: left;
+}
+#next {
+	width: 100px;
+	height: 50px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+	vertical-align: middle;
+	margin-left: 150px;
+	margin-top: 50px;
+	position: relative;
+	float: left;
+	border-radius: 10px;
+	-webkit-animation-name: naiPulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+#go {
+	width: 200px;
+	height: 50px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+	vertical-align: middle;
+	margin-left: 100px;
+	margin-top: 30px;
+	position: relative;
+	float: left;
+	border-radius: 10px;
+	-webkit-animation-name: naiPulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot'); /* IE9*/
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+#iconfont {
+  font-family:"iconfont" !important;
+  font-size:100px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}

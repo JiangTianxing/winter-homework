@@ -1,0 +1,14 @@
+<!-- 标签 与 日志 推荐 -->
+<div class="recommend">
+	<!--推荐阅读-->
+	<span style="color: blue;float: left;font-size: 20px">推荐阅读</span>
+	{foreach $tag['title'] as $row2}
+	<div class="rec-title">{$row2['jour_title']}</div>
+	{/foreach}
+</div>
+<div class="tags">
+	<span style="color: blue;float: left;font-size: 20px">分类</span>
+	{foreach $tag['tag'] as $row1}
+	<div class="tag">{$row1['jour_tag']}</div>
+	{/foreach}
+</div>

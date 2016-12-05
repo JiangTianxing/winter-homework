@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ablum</title>
+	<link rel="stylesheet" type="text/css" href="../img/css/ablum.css">
+	<link rel="stylesheet" type="text/css" href="../img/css/navigation.css">
+	
+<style type="text/css">
+#mask{
+		background-color:#ccc;
+		opacity:0.5;
+		filter: alpha(opacity=50); 
+		position:fixed; 
+		top: 0;
+		left: 0;
+		z-index:1000;
+}
+#login {
+	z-index: 2200;
+	position: fixed;
+}
+</style>
+</head>
+
+<body>
+
+{include file='admin/header.html'}
+<!-- 相册 -->
+<form action='album.php?method=addAlbumImage' method='post' enctype='multipart/form-data'>
+			<input type="hidden" name="MAX_FILE_SIZE" value="100000000000">
+			<input type="file" class="rel" name="myfile[]">
+			<input type="submit" value="上传" name="user">
+		</form>
+	<div class="pic-core">
+		<div class="picture">
+			{foreach $albumImage['name'] as $data}
+			<div class='abl'>
+				<div class='close-pic'></div>
+				<img src="{$albumImage['path']}{$data['image_name']}" onclick="post('../img/image/albumbig/{$data['image_name']}')">
+			</div>
+			{/foreach}
+		</div>
+	</div>
+	<script type="text/javascript">
+  	function post(filename) {
+  		var _Width=document.getElementsByTagName('html')[0].clientWidth;
+  		var wHeight= document.getElementsByTagName('html')[0].clientHeight;
+		var oMask=document.createElement("div");
+			oMask.id="mask";
+			oMask.style.width=_Width+"px";
+			oMask.style.height=wHeight+"px";
+			document.body.appendChild(oMask);
+			oMask.onclick=function() {
+				document.body.removeChild(oMask);
+				document.body.removeChild(oLogin);
+			}
+		var oLogin=document.createElement("div");
+			oLogin.id="login";
+			oLogin.innerHTML="<div><img src='"+filename+"'></div>";
+			oLogin.style.left=(_Width-1000)/2+"px"
+			oLogin.style.top='20px';
+
+			document.body.appendChild(oLogin);
+	}
+  </script>
+  <script type="text/javascript" src="../img/js/anavigation2.js"></script>
+</body>
+</html>
